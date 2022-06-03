@@ -56,3 +56,7 @@ a:link {
 a:visited {
     color:black;
 }
+
+img:hover {
+    filter: invert(20);
+}

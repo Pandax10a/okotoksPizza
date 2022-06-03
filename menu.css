@@ -1,0 +1,44 @@
+h1 {
+    font-size: 6em;
+    background-color: gray;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+#adjustTitle {
+    display: grid;
+    justify-items: center;
+
+}
+
+img {
+    height: 180px;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    column-gap: 10px;
+    row-gap: 5px;
+    
+    
+    
+}
+body {
+    
+    background-color: black;
+    
+}
+h2, h3, p {
+    color: whitesmoke;
+}
+article {
+    display: grid;
+    grid-template-rows: 1.2fr 4fr .8fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
