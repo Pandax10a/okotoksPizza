@@ -8,7 +8,7 @@ img {
 
 }
 
-body, h1 {
+body, h1, h2 {
     text-align: center;
 }
 #gridthis {
@@ -36,46 +36,24 @@ header button {
 
 
 
-
 p {
     font-size: 35px;
     font-family: cursive;
 }
-h2 {
-    text-align: center;
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr))
+}
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr))
 }
 
-.orangetext {
-    color: orange;
-    text-shadow: 3px 3px 20px green;
-}
 
-article .orangetext {
 
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
-th>img {
-    width: 300px;
-    height: 300px;
-}
 
-#makeitgray {
-    filter: grayscale(1
-    );
-}
 
-#makeitgray+th {
-filter: sepia(1);
-}
-
-p:hover {
-    font-size: 5px;
-}
-
-nav:active {
-    font-size: 30px;
-}
 
 a:link {
     color:brown;
@@ -85,6 +63,3 @@ a:visited {
     color:black;
 }
 
-img:hover {
-    filter: invert(20);
-}
