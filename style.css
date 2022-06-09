@@ -46,7 +46,74 @@ main {
 }
 footer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr))
+    grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (min-width: 440px){
+
+    #gridthis {
+    grid-template-columns: repeat(auto-fit, minmax(700px,1fr));
+    }
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(700px,1fr))
+    }
+    .movetext {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        
+    }
+    
+    #selfadjust {
+        justify-self: end;
+    }
+    #selfadjust2 {
+        justify-self: start;
+    }
+    #selfadjust3 {
+        justify-self: end;
+    }
+    #selfadjust4 {
+        justify-self: start;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 20vh;
+    
+    }
+    #gridthis {
+        grid-template-columns: repeat(auto-fit, minmax(1500px,1fr));
+        }
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(1500px,1fr))
+        }
+        .movetext {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            
+        }
+        
+        #selfadjust {
+            justify-self: end;
+        }
+        #selfadjust2 {
+            justify-self: start;
+        }
+        #selfadjust3 {
+            justify-self: end;
+        }
+        #selfadjust4 {
+            justify-self: start;
+        }
+
+
 }
 
 
