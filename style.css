@@ -49,6 +49,7 @@ footer {
     grid-template-columns: 1fr 1fr;
 }
 
+
 @media only screen and (min-width: 440px){
 
     #gridthis {
@@ -66,16 +67,17 @@ footer {
     }
     
     #selfadjust {
-        justify-self: end;
+        order: 2;
+        
     }
     #selfadjust2 {
-        justify-self: start;
+        order: 1;
     }
     #selfadjust3 {
-        justify-self: end;
+        order: 2
     }
     #selfadjust4 {
-        justify-self: start;
+        order: 1;
     }
 }
 
@@ -95,24 +97,17 @@ footer {
         }
         .movetext {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 2fr;
             justify-content: center;
             
         }
         
-        #selfadjust {
-            justify-self: end;
+        #selfadjust5 {
+            order: 2
         }
-        #selfadjust2 {
-            justify-self: start;
+        #selfadjust6 {
+            order: 1;
         }
-        #selfadjust3 {
-            justify-self: end;
-        }
-        #selfadjust4 {
-            justify-self: start;
-        }
-
 
 }
 
