@@ -13,13 +13,13 @@ body, h1, h2 {
 }
 #gridthis {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-template-rows: 20vw auto 10vw;
 }
 
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    height: 10vh;
+    grid-template-columns: auto 1fr auto;
+    min-height: 10vh;
 
 }
 
@@ -31,8 +31,14 @@ header button {
 }
 #headerpage {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
+#headerpage1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+
 
 
 
@@ -47,6 +53,78 @@ main {
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+/* create for individual letter spins */
+@keyframes spinMe1 {
+    0% {
+       
+        font-size: 3em;
+        color: blue;
+
+    }
+    50% {
+        
+    }
+    100% {
+      
+        font-size: 5em;
+        color: green;
+    }
+}
+
+@keyframes vertspin {
+    0% {
+        transform: rotateX(45deg);
+        background: #f70303;
+
+    }
+    25% {
+        transform: rotateX(90deg);
+        background-color: #f7a203;
+    }
+    75% {
+        transform: rotateX(135deg);
+        background-color: #dff703;
+    }
+    100% {
+        transform: rotateX(180deg);
+        background-color: aqua;
+    }
+}
+.animate2:hover {
+    animation-name: vertspin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+    animation-direction: alternate;
+}
+.animate:hover {
+    animation-name: spinMe1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+    animation-direction: alternate;
+}
+@keyframes sepianormal {
+    0% {
+        filter: blur(5px);
+    }
+    50% {
+        filter: sepia(1);
+    }
+    100% {
+        filter: none;
+    }
+}
+.animate3:hover {
+    animation-name: sepianormal;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+    animation-direction: alternate;
 }
 
 
