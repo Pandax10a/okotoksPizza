@@ -1,24 +1,5 @@
 @use "header";
-* {
-    border: 0;
-    padding: 0;
-}
-$color1:  orange;
-$color2: blue;
-$color3: green;
 
-img {
-    width: 100%;
-
-}
-
-body, h1, h2 {
-    text-align: center;
-}
-#gridthis {
-    display: grid;
-    grid-template-rows: 20vw auto 10vw;
-}
 
 
 article {
