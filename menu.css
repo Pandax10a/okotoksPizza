@@ -1,54 +1,48 @@
 h1 {
-    font-size: 6em;
-    background-color: gray;
-    text-align: center;
-    padding-left: 15%;
-    padding-right: 15%;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  font-size: 6em;
+  background-color: gray;
+  text-align: center;
+  padding-left: 15%;
+  padding-right: 15%;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-#adjustTitle {
-    display: grid;
-    justify-items: center;
 
+#adjustTitle {
+  display: grid;
+  justify-items: center;
 }
 
 img {
-    height: 180px;
+  height: 180px;
 }
-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    margin-left: 10%;
-    margin-right: 10%;
-    
-    column-gap: 10px;
-    row-gap: 5px;
-    
-    
-    
-}
-body {
-    
-    background-color: black;
-    
-}
-h2, h3, p {
-    color: whitesmoke;
-}
-article {
-    display: grid;
-    grid-template-rows: 1.2fr 1.3fr 1.2fr 1fr;
-    align-items: center;
-    justify-items: center;
-    margin: 5%;
 
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-left: 10%;
+  margin-right: 10%;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 5px;
+}
+
+body {
+  background-color: black;
+}
+
+h2, h3, p {
+  color: whitesmoke;
+}
+
+article {
+  display: grid;
+  grid-template-rows: 1.2fr 1.3fr 1.2fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin: 5%;
 }
 
 p {
-    
-    font-family: cursive;
-    text-align: center;
-    
-    
-}
-
+  font-family: cursive;
+  text-align: center;
+}/*# sourceMappingURL=menu.css.map */
